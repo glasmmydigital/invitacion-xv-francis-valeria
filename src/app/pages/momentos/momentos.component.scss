@@ -1,0 +1,186 @@
+.contenedor-nuest-momen {
+  position: relative;
+  text-align: center;
+}
+
+.colum-nuest-momen {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0 auto;
+}
+
+.titulo-momen {
+  font-family: "nathalia", serif;
+  font-size: 70px;
+  color: #bda672;
+  margin-bottom: 0 !important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.textosec {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.momentos-carousel-wrap {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+}
+
+@media (min-width: 600px) {
+  .momentos-carousel-wrap {
+    height: 360px;
+  }
+}
+
+@media (min-width: 900px) {
+  .momentos-carousel-wrap {
+    height: 420px;
+  }
+}
+
+.momentos-carousel-track {
+  animation-play-state: running;
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  height: 100%;
+  min-width: max-content;
+  animation: momentos-marquee 50s linear infinite;
+  will-change: transform;
+}
+
+.momentos-carousel-slide {
+  flex: 0 0 auto;
+  height: 100%;
+  line-height: 0;
+}
+
+.momentos-carousel-slide img {
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: cover; 
+  max-width: none;
+}
+
+@keyframes momentos-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--marquee-width));
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo-momen {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 464px) {
+  .titulo-momen {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .titulo-momen {
+    font-size: 40px;
+  }
+}
+
+
+
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Esconde las imágenes que se salen del área visible */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Transición suave para las imágenes */
+  will-change: transform;
+  /* Optimiza la animación */
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asegura que las imágenes no se deformen */
+  border-radius: 8px;
+  /* Bordes suaves para un toque elegante */
+}
+
+
+@media (min-width: 768px) {
+  .carousel-container {
+    height: 350px;
+    /* Altura fija para pantallas de computador */
+  }
+
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ajusta las imágenes para que se muestren completas */
+    border-radius: 8px;
+    /* Bordes suaves para un toque elegante */
+  }
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: repeat(2, auto); /* 2 filas ajustadas automáticamente */
+  gap: 10px; /* Espaciado entre los elementos */
+  margin-top: 10px;
+  width: 100%; /* Ocupa todo el ancho del contenedor padre */
+}
+
+.grid-item {
+  height: 250px; /* Altura fija para las celdas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.grid-item img {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 100%; /* Ocupa la altura completa del contenedor */
+  object-fit: cover; /* Recorta la imagen proporcionalmente */
+}
+
+.grid-item--width2 {
+  grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+.grid-item--height2 {
+  grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.grid-item--width3 {
+  grid-column: span 4; /* Ocupa 2 columnas */
+}
+
+.grid-item--height3 {
+  grid-row: span 2; /* Ocupa 2 filas */
+}

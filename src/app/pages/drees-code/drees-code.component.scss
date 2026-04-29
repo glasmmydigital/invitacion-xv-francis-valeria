@@ -1,0 +1,55 @@
+.contenedor-dress-code{
+  position: relative;
+  text-align: center;
+}
+
+.colum-dress-code{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.img-1 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-1 {
+    display: block;
+    margin-left: -70%;
+    position: absolute;
+    width: 30%;
+    margin-top: -13%;
+  }
+}
+
+.container-dress-code{
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.textosec{
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.titulo-dress{
+  font-family: "nathalia";
+  font-size: 60px;
+  color: #bda672;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.img-icon{
+  width: 25%;
+  margin-bottom: 5%;
+}

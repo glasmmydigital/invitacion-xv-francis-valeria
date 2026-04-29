@@ -1,0 +1,70 @@
+.contenedor-regalos{
+  position: relative;
+  text-align: center;
+}
+
+.colum-regalos{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.img-2 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-2 {
+display: block;
+        margin-left: 60%;
+        position: absolute;
+        width: 40%;
+        margin-top: 80%;
+  }
+}
+
+.container-regalos{
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.textosec{
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-right: 7%;
+  margin-left: 7%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.titulo-regalos{
+  font-family: "nathalia";
+  font-size: 60px;
+  color: #bda672;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.img-icon2{
+  width: 25%;
+  margin-bottom: 5%;
+}
+
+.img-icon{
+  width: 10%;
+  margin-bottom: 5%;
+}
+
+.reg-button{
+  text-transform: uppercase;
+  background-color: #d5a0a5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Cormorant", serif;
+}

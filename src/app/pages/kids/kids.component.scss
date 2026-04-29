@@ -1,0 +1,33 @@
+.contenedor-kids{
+  position: relative;
+  text-align: center;
+}
+
+.colum-kids{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.textosec{
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-right: 5%;
+  margin-left: 5%;
+
+}
+
+.titulo-kids{
+  font-family: elegant;
+  font-size: 60px;
+  color: #d5a0a5;
+  margin-bottom: 0% !important;
+}
+
+.img-icon{
+  width: 25%;
+}

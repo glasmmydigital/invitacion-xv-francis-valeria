@@ -1,0 +1,28 @@
+<div class="contenedor-confir-asistencia">
+  <div class="colum-confir-asistencia">
+    <img src="assets/confirmacion.png" alt="invitación" class="img-icon">
+    <br>
+    <p class="titulo-confir-aistencia" data-aos="zoom-in" [innerHTML]="traductorService.getTexto('tituloConfirmacion')">
+
+    </p>
+    <div class="contenedor-texto">
+      <!-- <P class="textosec">
+        {{traductorService.getTexto("textoConfirmacionUno")}}
+      </P>
+      <p class="textosec">
+        {{traductorService.getTexto("textoConfirmacionDos")}}
+      </p>
+      <br> -->
+       <p class="textosec">
+        {{traductorService.getTexto("textoConfirmacionUno")}}
+      </p>
+
+    </div>
+    <a [href]="traductorService.getTexto('confirmacionWhatsapp')"
+      class="confir-asisten-button"
+      target="_blank"
+      rel="noopener noreferrer">
+      {{traductorService.getTexto("buttonForms")}}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="contenedor-cerem-recep">
+  <div>
+    <img class="img-2" src="assets/img_f3.png">
+  </div>
+
+  <div class="colum-cerm">
+    <br>
+    <img src="assets/tiara.png" class="img-icon" alt="ceremonia">
+    <p class="titulo-cerm-recep" data-aos="zoom-in" [innerHTML]="traductorService.getTexto('tituloRecepcion')">
+    </p>
+    <p class="textosec">
+      <strong>Olga's Reception Hall</strong> <br>
+      12260 SW 8th St, Miami, FL 33184, EE. UU.
+    </p>
+    <p class="textosec">
+      {{traductorService.getTexto("horaCeremonia")}}
+    </p>
+    <a href="https://maps.app.goo.gl/7VsXizwJNyPRFd62A" data-aos="zoom-in" class="cerm-recep-button"
+      [innerHTML]="traductorService.getTexto('ubicacion')">
+    </a>
+    <br>
+    <br>
+    <!--
+      <p class="titulo-cerm-recep" data-aos="zoom-in" [innerHTML]="traductorService.getTexto('tituloRecepcion')">
+      </p>
+      <p class="textosec">
+        <strong>Odyssey Restaurant & Events</strong><br> 15600 Odyssey Dr Granada Hills, CA 91344 EE. UU.
+      </p>
+      <p class="textosec">
+        {{traductorService.getTexto("horaRecepcion")}}
+      </p>
+      <a href="https://maps.app.goo.gl/Rz3s7gnwVLVaCuTEA" data-aos="zoom-in" class="cerm-recep-button"
+        [innerHTML]="traductorService.getTexto('ubicacion')">
+      </a>
+    -->
+    <br>
+  </div>
+</div>

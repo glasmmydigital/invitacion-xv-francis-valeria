@@ -1,0 +1,39 @@
+<div class="container-calen">
+  <div class="colum-calen">
+    <img src="assets/img_f2.png" class="img-1">
+
+    <section class="calendario" aria-label="Calendario del mes">
+      <div class="calendario-titulo-bar">
+        <span class="calendario-titulo-mes" data-aos="zoom-in" data-aos-duration="3000">
+          {{ meses[obtenerPartesFecha()?.mes || 0] }}
+        </span>
+        <span class="calendario-titulo-anio" data-aos="zoom-in" data-aos-duration="3000">
+          {{ obtenerPartesFecha()?.anio }}
+        </span>
+      </div>
+    
+      <div class="calendario-dias-cabecera" role="row">
+        @for (dia of diasSemana; track $index) {
+          <span class="calendario-dia-cabecera" role="columnheader">
+            {{ dia }}
+          </span>
+        }
+      </div>
+    
+      <div class="calendario-grilla" role="grid">
+        @for (celda of celdasMes; track $index) {
+          <div
+            class="calendario-celda"
+            [class.calendario-celda--vacia]="celda === null"
+            [class.calendario-celda--seleccionado]="esDiaSeleccionado(celda)"
+            role="gridcell"
+          >
+            @if (celda !== null) {
+              <span class="calendario-dia-numero">{{ celda }}</span>
+            }
+          </div>
+        }
+      </div>
+    </section>
+  </div>
+</div>

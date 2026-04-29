@@ -1,0 +1,70 @@
+.contenedor-des-img {
+  position: relative;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.colum-des-img {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0 auto;
+}
+
+.textosec {
+  font-size: 50px;
+  font-family: "nathalia";
+  font-size: 55px;
+  color: #bda672;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.nom-pareja {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #222222;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: repeat(2, auto); /* 2 filas ajustadas automáticamente */
+  gap: 10px; /* Espaciado entre los elementos */
+  margin-top: 10px;
+  width: 100%; /* Ocupa todo el ancho del contenedor padre */
+}
+
+.grid-item {
+  height: 250px; /* Altura fija para las celdas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.grid-item img {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 100%; /* Ocupa la altura completa del contenedor */
+  object-fit: cover; /* Recorta la imagen proporcionalmente */
+}
+
+.grid-item--width2 {
+  grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+.grid-item--height2 {
+  grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.grid-item--width3 {
+  grid-column: span 4; /* Ocupa 2 columnas */
+}
+
+.grid-item--height3 {
+  grid-row: span 2; /* Ocupa 2 filas */
+}

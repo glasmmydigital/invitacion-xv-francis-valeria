@@ -1,0 +1,47 @@
+.contenedor-confir-asistencia {
+  position: relative;
+  text-align: center;
+}
+
+.colum-confir-asistencia {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.contenedor-texto {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.textosec {
+  font-family: "Cormorant", serif;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0%;
+}
+
+.img-icon {
+  width: 25%;
+  margin-bottom: 5%;
+}
+
+.confir-asisten-button {
+  background-color: rgba(255, 223, 228, 0.5215686275);
+  color: #d86c7d;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Cormorant", serif;
+}
+
+.titulo-confir-aistencia {
+  font-family: "nathalia";
+  font-size: 60px;
+  color: #bda672;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}

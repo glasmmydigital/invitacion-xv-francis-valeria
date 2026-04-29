@@ -1,0 +1,101 @@
+.solofaltan {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #d86c7d;
+  /* Cambia el color según el contraste necesario */
+  font-size: 30px;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.contenedor-conteo {
+  //background-color: #819AAB; // Color de fondo
+  padding: 20px; // Agrega padding
+  display: flex; // Usar flexbox para alinear elementos
+  flex-direction: column; // Dirección de los elementos en columna
+  align-items: center; // Centra los elementos
+  max-width: 525px; // Asegura el mismo ancho que la imagen
+  margin: 0px auto; // Centra horizontalmente y añade margen superior e inferior
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  /* Espaciado entre bloques */
+}
+
+.tiempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuadro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdfe485;
+  /* Cuadro con fondo dorado transparente */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 12px 20px;
+  /* Espaciado dentro del cuadro */
+  width: 100px;
+  /* Ancho fijo para todos los cuadros */
+  height: 120px;
+  /* Alto fijo para que todos tengan el mismo tamaño */
+  text-align: center;
+}
+
+.numero {
+  font-size: 3rem;
+  /* Tamaño reducido del número */
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  color: #d86c7d;
+  /* Color más fuerte */
+}
+
+.etiqueta {
+  font-size: 1.1rem;
+  /* Tamaño de la etiqueta */
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  color: #d86c7d;
+  /* Color más fuerte */
+  margin-top: 5px;
+}
+
+// Responsividad
+@media (max-width: 768px) {
+  .numero {
+    font-size: 2rem;
+  }
+
+  .etiqueta {
+    font-size: 1rem;
+  }
+
+  .cuadro {
+    width: 90px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .numero {
+    font-size: 2rem;
+  }
+
+  .etiqueta {
+    font-size: 1rem;
+  }
+
+  .cuadro {
+    width: 80px;
+    height: 100px;
+  }
+}

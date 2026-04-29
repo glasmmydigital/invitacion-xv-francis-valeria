@@ -1,0 +1,349 @@
+@font-face {
+  font-family: elegant;
+  src: url('/assets/Elegant.otf') format('truetype');
+}
+
+@font-face {
+  font-family: nathalia;
+  src: url('/assets/Nathalia.ttf') format('truetype');
+}
+
+.portada-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* Ajusta la altura según la imagen */
+}
+
+.imagen-portada {
+  width: 100%;
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  object-fit: cover;
+  /* Asegura que la imagen cubra todo el contenedor */
+}
+
+.contenedor-carousel {
+  max-width: 525px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carouselImg {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Transición suave para las imágenes */
+  will-change: transform;
+  /* Optimiza la animación */
+}
+
+.carouselImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asegura que las imágenes no se deformen */
+}
+
+@media (min-width: 768px) {
+
+  .carouselImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ajusta las imágenes para que se muestren completas */
+  }
+}
+
+
+.texto-overlay {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  /* Centra el texto */
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+  color: white;
+  /* Color de texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.86);
+  /* Sombra para mayor visibilidad */
+}
+
+.tituloportada {
+  color: #d86c7d;
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  margin-bottom: 0;
+}
+
+.titulopadrinos {
+  color: #d86c7d;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.imgCalendario {
+  max-width: 525px;
+  width: 100%;
+}
+
+.img-1 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-1 {
+    display: block;
+    margin-left: -70%;
+    position: absolute;
+    width: 29%;
+    margin-top: 65%;
+    z-index: 1;
+  }
+}
+
+.nombrePortada {
+  font-family: elegant;
+  font-size: 6rem;
+}
+
+.testasinvitado {
+  color: #819AAB;
+  font-size: 25px;
+}
+
+.img-0 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-0 {
+    display: block;
+    margin-left: 0%;
+    position: absolute;
+    width: 25%;
+    margin-top: 165%;
+  }
+}
+
+.contenedor-portada {
+  position: relative;
+  text-align: center;
+
+  .imagen-portada {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el área */
+    max-width: 565px;
+    /* Tamaño máximo para mantenerla más estrecha */
+    margin: 0 auto;
+    /* Centra la imagen */
+  }
+
+  /* Media query para pantallas de tablets */
+  @media (max-width: 768px) {
+    .nombrePortada {
+      font-size: 5rem;
+      width: 100%;
+    }
+
+    .tituloportada {
+      font-size: 50px;
+      width: 100%;
+    }
+
+    .testasinvitado {
+      color: #819AAB;
+      font-size: 20px;
+    }
+
+    .imagen-portada {
+      max-width: 500px;
+      /* Ajusta el ancho máximo en tabletas */
+    }
+
+    .texto-overlay {
+      top: 65%;
+    }
+  }
+
+  .testasinvitado {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+  }
+
+  .contenedor-conteo {
+    //background-color: #819AAB; // Color de fondo
+    padding: 20px; // Agrega padding
+    display: flex; // Usar flexbox para alinear elementos
+    flex-direction: column; // Dirección de los elementos en columna
+    align-items: center; // Centra los elementos
+    max-width: 525px; // Asegura el mismo ancho que la imagen
+    margin: 0px auto; // Centra horizontalmente y añade margen superior e inferior
+  }
+
+  .nomQ {
+    font-family: "nathalia";
+    font-size: 85px;
+    color: #bda672;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+
+  .titulop {
+    font-family: "nathalia";
+    font-size: 2.4rem;
+    color: #bda672;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+
+  .nombrePadrinos {
+    font-family: "nathalia";
+    font-size: 2.5rem;
+    color: #bda672;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+
+  .nompadres {
+    font-family: "Cormorant", serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+
+  }
+
+  .textosec {
+    font-family: "Cormorant", serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+  }
+
+
+
+  .contenedor-button-idioma {
+    display: flex;
+    /* Asegura que los elementos estén alineados en una fila */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    gap: 10px;
+    /* Espaciado entre el botón y el texto */
+    margin-bottom: 20px;
+    justify-content: center;
+    /* Opcional: centra horizontalmente dentro del contenedor */
+  }
+
+  .texto-idioma {
+    font-family: "Cormorant", serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0%;
+  }
+
+  .music-player {
+    margin-bottom: 20px; // Espacio entre el reproductor y el contador
+  }
+
+  @media (max-width: 480px) {
+    .nombrePortada {
+      margin-top: -5%;
+      font-size: 110px;
+      width: 100%;
+    }
+
+    .tituloportada {
+      margin-top: -5%;
+      font-size: 45px;
+      width: 100%;
+    }
+
+    .testasinvitado {
+      color: #819AAB;
+      font-size: 30px;
+    }
+
+
+  }
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background: #d86c7d;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  inset: 0;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:checked+.slider {
+  background: #d86c7d;
+}
+
+.switch input:focus+.slider {
+  box-shadow: 0 0 1px #d86c7d;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(1.6em);
+}
+
+
+.textosecf {
+  font-family: elegant;
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+}

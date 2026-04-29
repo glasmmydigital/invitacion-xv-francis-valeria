@@ -1,0 +1,99 @@
+.contenedor-fech-img {
+  position: relative;
+  text-align: center;
+  //padding: 40px 0px;
+}
+
+.colum-fech-img {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.img-pareja {
+  width: 100%;
+  height: auto;
+}
+
+.textosec {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+.fecha-boda {
+  font-family: elegant;
+  font-style: italic;
+  font-size: 55px;
+  color: #050404;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+.textPas {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 0%;
+}
+
+@media (max-width: 768px) {
+  .fecha-boda {
+    font-family: elegant;
+    font-size: 35px;
+    margin-bottom: 0;
+    color: #000000;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .fecha-boda {
+    font-family: elegant;
+    font-size: 40px;
+    margin-bottom: 0;
+    color: #0b0909;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .carousel-container {
+    height: 790px; /* Altura fija para pantallas de computador */
+  }
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta las imágenes para que se muestren completas */
+    border-radius: 8px; /* Bordes suaves para un toque elegante */
+  }
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; /* Esconde las imágenes que se salen del área visible */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transición suave para las imágenes */
+  will-change: transform; /* Optimiza la animación */
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
+  border-radius: 8px; /* Bordes suaves para un toque elegante */
+}

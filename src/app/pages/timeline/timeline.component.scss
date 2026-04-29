@@ -1,0 +1,124 @@
+.contenedor.linetime {
+  position: relative;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.colum-timeline {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 525px;
+  margin: 0px auto;
+}
+
+.colum-timeline-text {
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+#timeline1 {
+  font-family: "nathalia";
+  font-size: 60px;
+  color: #bda672;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
+}
+
+#timeline2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "nathalia";
+  color: #4f5c4c;
+  margin-top: 0%;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  border-left: 2px solid #4f5c4c;
+  padding-bottom: 20px;
+}
+
+.timeline-item:last-child {
+  border-left: none;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #4f5c4c;
+  border-radius: 50%;
+  position: absolute;
+  left: -16px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+}
+
+.timeline-item:nth-child(1)::before {
+  content: "\f51d";
+  /* Código del icono que quieres usar */
+  font-family: "Font Awesome 5 Free";
+  /* Asegúrate de que el nombre coincida */
+  font-weight: 900;
+  /* Usado para íconos sólidos */
+}
+
+.timeline-item:nth-child(2)::before {
+  content: "\f561";
+  /* Código del icono que quieres usar */
+  font-family: "Font Awesome 5 Free";
+  /* Asegúrate de que el nombre coincida */
+  font-weight: 900;
+  /* Usado para íconos sólidos */
+}
+
+.timeline-item:nth-child(3)::before {
+  content: "\f005";
+  /* Código del icono que quieres usar */
+  font-family: "Font Awesome 5 Free";
+  /* Asegúrate de que el nombre coincida */
+  font-weight: 900;
+  /* Usado para íconos sólidos */
+}
+
+.timeline-item:nth-child(4)::before {
+  content: "\f1b9";
+  /* Código del icono que quieres usar */
+  font-family: "Font Awesome 5 Free";
+  /* Asegúrate de que el nombre coincida */
+  font-weight: 900;
+  /* Usado para íconos sólidos */
+}
+
+.timeline-content h2 {
+  color: #333;
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  color: #555;
+  font-family: "Quicksand", sans-serif;
+}

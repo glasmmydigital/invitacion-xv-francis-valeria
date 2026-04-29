@@ -1,0 +1,111 @@
+<div class="contenedor-carrusel">
+  <div class="colum-carrusel">
+    <section class="Seccion-galeria">
+      <img src="assets/sugerencia.png" alt="invitación" class="img-icon2">
+      <p data-aos="fade-up" id="textSugVestimenta" class="subtitulos">
+        {{ traductorService.getTexto("tituloHotel") }}
+      </p><br>
+
+      <a class="agregar-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        {{ traductorService.getTexto("clic1") }}
+      </a>
+      <br><br>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <div class="containerImg">
+            <img src="assets/recurso.png" alt="invitación" class="img-icon">
+            <br>
+            <p class="titulo-seccion">• {{ traductorService.getTexto("tituloVuelos") }}</p>
+            <p class="texto1" [innerHTML]="traductorService.getTexto('aviancaTexto2')"></p>
+          </div>
+          <br>
+
+          <div class="info-bloque">
+            <h3 class="titulo-subseccion">Courtyard by Marriott Miami at Dolphin Mall</h3>
+            <p>11275 NW 12th St, Doral, FL 33172, EE. UU.</p>
+            <p><strong>{{ traductorService.getTexto("telefonoLabel") }}:</strong> +13059949343</p>
+            <!--
+              <p>{{ traductorService.getTexto("aviancaTexto1") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto2") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto3") }}</p>
+            -->
+            <a class="agregar-btn"
+              href="https://www.marriott.com/en-us/hotels/miadm-courtyard-miami-at-dolphin-mall/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('website')">
+            </a>
+          </div>
+
+          <br><br>
+
+          <div class="info-bloque">
+            <h3 class="titulo-subseccion">Hilton Garden Inn Miami Dolphin Mall</h3>
+            <p>1695 NW 111th Ave Suite A, Sweetwater, FL 33172, EE. UU.</p>
+            <p><strong>{{ traductorService.getTexto("telefonoLabel") }}:</strong> +13055009077</p>
+            <!--
+              <p>{{ traductorService.getTexto("aviancaTexto1") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto2") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto3") }}</p>
+            -->
+            <a class="agregar-btn"
+              href="https://www.hilton.com/en/hotels/miadogi-hilton-garden-inn-miami-dolphin-mall/?SEO_id=GMB-AMER-GI-MIADOGI&y_source=1_MzQ4NzAyNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('website')">
+            </a>
+          </div>
+
+          <br><br>
+
+          <div class="info-bloque">
+            <h3 class="titulo-subseccion">Holiday Inn Express & Suites Doral - Miami by IHG</h3>
+            <p>1691 NW 107th Ave, Doral, FL 33172, EE. UU.</p>
+            <p><strong>{{ traductorService.getTexto("telefonoLabel") }}:</strong> +13054688568</p>
+            <!--
+              <p>{{ traductorService.getTexto("aviancaTexto1") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto2") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto3") }}</p>
+            -->
+            <a class="agregar-btn"
+              href="https://www.ihg.com/holidayinnexpress/hotels/us/en/doral/miado/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-MIADO"
+              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('website')">
+            </a>
+          </div>
+
+          <br><br>
+
+          <div class="info-bloque">
+            <h3 class="titulo-subseccion">Holiday Inn Express & Suites Doral - Miami by IHG</h3>
+            <p>1691 NW 107th Ave, Doral, FL 33172, EE. UU.</p>
+            <p><strong>{{ traductorService.getTexto("telefonoLabel") }}:</strong> +13054688568</p>
+            <!--
+              <p>{{ traductorService.getTexto("aviancaTexto1") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto2") }}</p>
+              <p>{{ traductorService.getTexto("aviancaTexto3") }}</p>
+            -->
+            <a class="agregar-btn"
+              href="https://www.ihg.com/holidayinnexpress/hotels/us/en/doral/miado/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-MIADO"
+              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('website')">
+            </a>
+          </div>
+
+          <br><br>
+
+        </div><br>
+        <div class="card card-body">
+          <div class="containerImg">
+            <img src="assets/kit-de-maquillaje.png" alt="invitación" class="img-icon">
+            <br>
+            <p class="titulo-seccion">• {{ traductorService.getTexto("aviancaTexto3") }}</p>
+            <p class="texto1" [innerHTML]="traductorService.getTexto('aviancaTexto1')"></p>
+            <br>
+            <a class="agregar-btn"
+              href="https://www.ihg.com/holidayinnexpress/hotels/us/en/doral/miado/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-US-_-MIADO"
+              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('website')">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br />
+
+  </div>
+</div>
