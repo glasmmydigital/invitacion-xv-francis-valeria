@@ -68,3 +68,37 @@
 .grid-item--height3 {
   grid-row: span 2; /* Ocupa 2 filas */
 }
+
+
+
+@media (min-width: 768px) {
+  .gallery-wrapper {
+    height: 400px;
+  }
+
+  .gallery-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
+
+.gallery-wrapper {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.gallery-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

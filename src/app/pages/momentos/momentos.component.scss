@@ -23,7 +23,8 @@
 
 .textosec {
   font-family: "Cormorant", serif;
-  font-style: italic;
+  text-decoration: none;
+  color: #000;
   font-size: 20px;
   margin-left: 7%;
   margin-right: 7%;
@@ -69,7 +70,7 @@
   display: block;
   height: 100%;
   width: auto;
-  object-fit: cover; 
+  object-fit: cover;
   max-width: none;
 }
 
@@ -77,6 +78,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(var(--marquee-width));
   }
@@ -148,39 +150,57 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  grid-template-rows: repeat(2, auto); /* 2 filas ajustadas automáticamente */
-  gap: 10px; /* Espaciado entre los elementos */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas iguales */
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas ajustadas automáticamente */
+  gap: 10px;
+  /* Espaciado entre los elementos */
   margin-top: 10px;
-  width: 100%; /* Ocupa todo el ancho del contenedor padre */
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor padre */
 }
 
 .grid-item {
-  height: 250px; /* Altura fija para las celdas */
+  height: 250px;
+  /* Altura fija para las celdas */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+  overflow: hidden;
+  /* Oculta cualquier parte de la imagen que sobresalga */
 }
 
 .grid-item img {
-  width: 100%; /* Ocupa el ancho completo del contenedor */
-  height: 100%; /* Ocupa la altura completa del contenedor */
-  object-fit: cover; /* Recorta la imagen proporcionalmente */
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor */
+  height: 100%;
+  /* Ocupa la altura completa del contenedor */
+  object-fit: cover;
+  /* Recorta la imagen proporcionalmente */
 }
 
 .grid-item--width2 {
-  grid-column: span 2; /* Ocupa 2 columnas */
+  grid-column: span 2;
+  /* Ocupa 2 columnas */
+}
+
+.grid-item--width4 {
+  grid-column: span 3;
+  /* Ocupa 2 columnas */
 }
 
 .grid-item--height2 {
-  grid-row: span 2; /* Ocupa 2 filas */
+  grid-row: span 2;
+  /* Ocupa 2 filas */
 }
 
 .grid-item--width3 {
-  grid-column: span 4; /* Ocupa 2 columnas */
+  grid-column: span 4;
+  /* Ocupa 2 columnas */
 }
 
 .grid-item--height3 {
-  grid-row: span 2; /* Ocupa 2 filas */
+  grid-row: span 2;
+  /* Ocupa 2 filas */
 }
