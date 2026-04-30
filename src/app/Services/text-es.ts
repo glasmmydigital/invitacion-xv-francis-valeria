@@ -52,7 +52,7 @@ export const TEXT_ES: { [key: string]: string } = {
   // CEREMONIA Y RECEPCIÓN
   tituloCeremonia: 'Ceremonia',
   direccionCeremonia: '<b>Mission San Fernando Rey de España</b><br>15151 San Fernando Mission Blvd, Mission Hills, CA 91345, Estados Unidos',
-  horaCeremonia: 'Hora: 7:00 P.M. - 1:00 A.M.',
+  horaCeremonia: 'Hora: 6:45 P.M. - 1:00 A.M.',
   ubicacion: 'VER UBICACIÓN',
   tituloRecepcion: 'Celebración',
   textoInv: 'Valet Parking de cortesía',
