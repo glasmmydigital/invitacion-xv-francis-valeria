@@ -5,7 +5,7 @@ export const TEXT_ES: { [key: string]: string } = {
   pCancion: 'Tu navegador no soporta el elemento de audio.',
   subTitulo: '¡Estás invitado!',
   mensajeBienvenida1: 'Hay momentos en la vida que son importantes por sí solos, pero compartirlos con quienes más amamos los convierte en recuerdos únicos e inolvidables.',
-  mensajeBienvenida2: 'Con la bendición de Dios y el amor que mi familia me ha brindado, me siento feliz de llegar a este momento en mi vida;<br><br>Porque eres parte de mi vida, es mi deseo que compartas conmigo la alegría de mis quince años...',
+  mensajeBienvenida2: 'Con la bendición de Dios y el gran amor que recibo de mi familia, estoy muy gozosa de estar arribando a un momento único de mi existencia.<br><br>y porque eres parte de mi vida deseo compartas conmigo la alegría de celebrar juntos',
   mensajeBienvenida3: 'Te invita cordialmente a disfrutar <br>este día mágico conmigo.',
   soloFaltan: 'Sólo faltan:',
   counterDias: 'Días',
@@ -52,7 +52,7 @@ export const TEXT_ES: { [key: string]: string } = {
   // CEREMONIA Y RECEPCIÓN
   tituloCeremonia: 'Ceremonia',
   direccionCeremonia: '<b>Mission San Fernando Rey de España</b><br>15151 San Fernando Mission Blvd, Mission Hills, CA 91345, Estados Unidos',
-  horaCeremonia: 'Hora: 6:45 P.M. - 1:00 A.M.',
+  horaCeremonia: 'Hora: 6:30 P.M. - 1:00 A.M.',
   ubicacion: 'VER UBICACIÓN',
   tituloRecepcion: 'Celebración',
   textoInv: 'Valet Parking de cortesía',
@@ -64,8 +64,7 @@ export const TEXT_ES: { [key: string]: string } = {
   // VESTIMENTA O DRESS CODE
   tituloVestimenta: 'Vestimenta',
   textoVestimentaUno: 'Estilo Formal ',
-  textoVestimentaDos: 'Lo más importante es que te sientas cómodo y especial en este día tan importante, así que elige el atuendo que más te haga sentir bien.',
-  // NUESTROS MOMENTOS
+  textoVestimentaDos: 'Lo más importante es que te sientas cómodo y especial en este día tan importante, así que elige el atuendo que más te haga sentir bien. Amablemente solicitamos evitar el uso de tonos rosados.',  // NUESTROS MOMENTOS
   tituloMomentos: 'Galería de Fotos',
   textoMomentos: 'Ayuda a que crezcan los recuerdos de este día tan especial. Escanea el código QR para compartir tus momentos y ser parte de esta hermosa celebración.',
   buttonMomentos: '¡SUBIR FOTOS!',

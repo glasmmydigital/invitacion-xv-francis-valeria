@@ -5,8 +5,7 @@ export const TEXT_EN: { [key: string]: string } = {
   pCancion: 'Your browser does not support the audio element.',
   subTitulo: 'You are invited!',
   mensajeBienvenida1: 'There are moments in life that are important on their own, but sharing them with those we love the most turns them into unique and unforgettable memories.',
-  mensajeBienvenida2: 'With God’s blessing and the love my family has given me, I feel happy to reach this moment in my life;<br><br>Because you are part of my life, it is my wish that you share with me the joy of my fifteenth birthday...',
-  mensajeBienvenida3: 'Cordially invites you to enjoy <br>this magical day with me.',
+  mensajeBienvenida2: 'With God’s blessing and the great love I receive from my family, I am very joyful to be reaching a unique moment in my life.<br><br>And because you are part of my life, I wish for you to share with me the joy of celebrating together',  mensajeBienvenida3: 'Cordially invites you to enjoy <br>this magical day with me.',
   soloFaltan: 'Countdown:',
   counterDias: 'Days',
   counterHoras: 'Hours',
@@ -47,7 +46,7 @@ export const TEXT_EN: { [key: string]: string } = {
   // CEREMONIA Y RECEPCIÓN
   tituloCeremonia: 'Ceremony',
   direccionCeremonia: '<b>Mission San Fernando Rey de España</b><br>15151 San Fernando Mission Blvd, Mission Hills, CA 91345, United States',
-  horaCeremonia: 'Time: 6:45 P.M. - 1:00 A.M.',
+  horaCeremonia: 'Time: 6:30 P.M. - 1:00 A.M.',
   ubicacion: 'SEE LOCATION',
   tituloRecepcion: 'Celebration',
   textoInv: 'Valet Parking complementary',
@@ -59,9 +58,8 @@ export const TEXT_EN: { [key: string]: string } = {
   // VESTIMENTA O DRESS CODE
   tituloVestimenta: 'Dress Code',
   textoVestimentaUno: 'Formal Style',
-  textoVestimentaDos: 'The most important thing is that you feel comfortable and special on this important day, so choose the outfit that makes you feel your best.',
-  // NUESTROS MOMENTOS
-  tituloMomentos: 'Our Moments',
+  textoVestimentaDos: 'The most important thing is that you feel comfortable and special on this meaningful day, so choose an outfit that makes you feel your best. We kindly ask that you avoid wearing pink tones.',  // NUESTROS MOMENTOS
+  tituloMomentos: 'Photo gallery',
   textoMomentos: 'Help grow the memories of this special day. Scan the QR code to share your moments and be part of this beautiful celebration.',
   buttonMomentos: 'UPLOAD PHOTOS!',
   // REGALOS

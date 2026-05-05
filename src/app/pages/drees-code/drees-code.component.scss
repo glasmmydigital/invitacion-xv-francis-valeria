@@ -19,12 +19,27 @@
 @media screen and (max-width: 500px) {
   .img-1 {
     display: block;
-    margin-left: -70%;
+    margin-left: -21%;
     position: absolute;
-    width: 30%;
-    margin-top: -13%;
+    width: 79%;
+    margin-top: -74%;
   }
 }
+
+.img-2 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-2 {
+    display: block;
+    margin-left: 20%;
+    position: absolute;
+    width: 79%;
+    margin-top: -3%;
+  }
+}
+
 
 .container-dress-code{
   margin-top: 5%;

@@ -8,6 +8,8 @@
   src: url('/assets/Nathalia.ttf') format('truetype');
 }
 
+
+
 .portada-container {
   position: relative;
   width: 100%;
@@ -29,6 +31,20 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+.portada {
+  background-image: url('/assets/castillo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
+.contenedor-nombres p {
+  position: relative;
+  z-index: 1;
+}
+
+
 
 .carouselImg {
   display: flex;
@@ -179,11 +195,11 @@
 
   .contenedor-conteo {
     //background-color: #819AAB; // Color de fondo
-    padding: 20px; // Agrega padding
+    padding: 20px 0;
     display: flex; // Usar flexbox para alinear elementos
     flex-direction: column; // Dirección de los elementos en columna
     align-items: center; // Centra los elementos
-    max-width: 525px; // Asegura el mismo ancho que la imagen
+    max-width: 1005; // Asegura el mismo ancho que la imagen
     margin: 0px auto; // Centra horizontalmente y añade margen superior e inferior
   }
 

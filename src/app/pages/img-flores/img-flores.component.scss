@@ -9,7 +9,8 @@
     position: absolute;
     width: 100%;
     margin-top: -290%;
-    z-index: 1;
+    z-index: 0;
+    
   }
 }
 
@@ -44,6 +45,7 @@
     position: absolute;
     width: 25%;
     margin-top: -145%;
+    z-index: 0;
   }
 }
 
@@ -62,6 +64,7 @@
     position: absolute;
     width: 25%;
     margin-top: -130%;
+    z-index: 0;
   }
 }
 
@@ -80,23 +83,24 @@
     position: absolute;
     width: 25%;
     margin-top: -150%;
+    z-index: 0;
   }
 }
 
 @media screen and (min-width: 412px) {
   .img-2{
-    display: block;
-    margin-left: 73%;
+    margin-left: 64%;
     position: absolute;
-    width: 28%;
-    margin-top: -130%;
+    width: 35%;
+    margin-top: -250%;
   }
 
   .img-1 {
-    display: block;
-    margin-left: -7%;
-    position: absolute;
-    width: 39%;
-    margin-top: -93%;
+      display: block;
+      margin-left: -7%;
+      position: absolute;
+      width: 71%;
+      margin-top: -289%;
+      z-index: 0;
   }
 }

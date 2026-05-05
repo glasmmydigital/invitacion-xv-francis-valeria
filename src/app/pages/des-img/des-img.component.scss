@@ -102,3 +102,51 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+.img-2 {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .img-2{
+    display: block;
+    margin-left: -34%;
+    position: absolute;
+    width: 65%;
+    margin-top: -5%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .img-2{
+    display: block;
+    margin-left: 70%;
+    position: absolute;
+    width: 30%;
+    margin-top: -680%;
+  }
+}
+
+.bloque-despedida {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.bloque-despedida::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/assets/hadas.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px; /* ajusta tamaño */
+
+  opacity: 0.40; /* efecto elegante */
+  z-index: 0;
+}
+
+.bloque-despedida p {
+  position: relative;
+  z-index: 1;
+}
