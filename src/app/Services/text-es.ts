@@ -5,7 +5,7 @@ export const TEXT_ES: { [key: string]: string } = {
   pCancion: 'Tu navegador no soporta el elemento de audio.',
   subTitulo: '¡Estás invitado!',
   mensajeBienvenida1: 'Hay momentos en la vida que son importantes por sí solos, pero compartirlos con quienes más amamos los convierte en recuerdos únicos e inolvidables.',
-  mensajeBienvenida2: 'Con la bendición de Dios y el gran amor que recibo de mi familia, estoy muy gozosa de estar arribando a un momento único de mi existencia.<br><br>y porque eres parte de mi vida deseo compartas conmigo la alegría de celebrar juntos',
+  mensajeBienvenida2: 'Con la bendición de Dios y el gran amor que recibo de mi familia, estoy muy gozosa de estar arribando a un momento único de mi existencia...<br><br>y porque eres parte de mi vida deseo compartas conmigo la alegría de celebrar juntos',
   mensajeBienvenida3: 'Te invita cordialmente a disfrutar <br>este día mágico conmigo.',
   soloFaltan: 'Sólo faltan:',
   counterDias: 'Días',
@@ -71,7 +71,9 @@ export const TEXT_ES: { [key: string]: string } = {
   // REGALOS
   tituloRegalo: 'Regalos',
   subtituloRegalo: '<b>Lluvia de sobres<b>',
-  textoRegaloDos: 'Para nosotros, lo más importante es compartir este momento tan especial con ustedes. Si desean hacernos un obsequio, con mucho cariño recibiremos una lluvia de sobres o tarjetas de regalo.',
+  textoRegaloDos: 'Tu presencia es lo más importante para mí y el mejor regalo que puedo recibir, sin embargo si deseas tener un detalle te comparto esta opción:',
+  textoRegOp1: 'Lluvia de Sobres',
+  textoRegOp2: 'Mesa de Regalos',
   // NO NIÑOS
   tituloKids: 'Nota Importante',
   textoKids: 'Amamos a los niños y su alegría siempre ilumina nuestras vidas. Sin embargo, para esta celebración especial, el evento será exclusivo para adultos. Agradecemos su comprensión.',
