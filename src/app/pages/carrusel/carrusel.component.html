@@ -1,10 +1,12 @@
 <div class="contenedor-carrusel">
-  <div class="colum-carrusel" >
+  <div class="colum-carrusel">
     <section class="Seccion-galeria" style="position: relative;">
       <img src="assets/sugerencia.png" alt="invitación" class="img-icon2">
       <p data-aos="fade-up" id="textSugVestimenta" class="subtitulos">
         {{ traductorService.getTexto("tituloHotel") }}
-      </p><br>
+      </p>
+      <p class="titulo-subseccion"  [innerHTML]="traductorService.getTexto('subtituloHoteles')"></p>
+      <br>
 
       <a class="agregar-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
         aria-controls="collapseExample">
@@ -97,15 +99,38 @@
             <p class="titulo-seccion">{{ traductorService.getTexto("aviancaTexto3") }}</p>
             <p class="texto1" [innerHTML]="traductorService.getTexto('aviancaTexto1')"></p>
             <br>
-            <a class="agregar-btn"
-              href="https://www.instagram.com/donyusbel?igsh=amltY2Z6YTQ0NXV3"
-              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('buttonRedes1')">
+            <p class="texto1"><strong>DonYusbel</strong> <br> {{traductorService.getTexto("estilista")}}</p>
+            <p class="texto1">
+              +1 (786) 426-4723
+            </p>
+            <a class="agregar-btn" href="https://www.instagram.com/donyusbel?igsh=amltY2Z6YTQ0NXV3" target="_blank"
+              rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('buttonRedes1')">
             </a>
-            <br><br><br>  
-            <a class="agregar-btn"
-              href="https://www.instagram.com/liliammakeup?igsh=ZWk2Z2x1aHFuczlt"
-              target="_blank" rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('buttonRedes2')">
-            </a><br>
+
+
+            <br><br><br>
+
+
+
+
+            <p class="texto1"><strong>Lilia</strong> <br> {{traductorService.getTexto("maquillista")}}</p>
+            <p class="texto1">
+              +1 (786) 586-4958
+            </p>
+            <a class="agregar-btn" href="https://www.instagram.com/liliammakeup?igsh=ZWk2Z2x1aHFuczlt" target="_blank"
+              rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('buttonRedes1')">
+            </a>
+            <br><br><br>
+
+
+            <p class="texto1"><strong>Gabriel</strong> <br> {{traductorService.getTexto("maquillista")}}</p>
+            <p class="texto1">
+              +1 (305) 907-4590
+            </p>
+            <a class="agregar-btn" href="https://www.instagram.com/jibril_makeupandcolor?igsh=MXYxdzhleGt4cWFvMQ==" target="_blank"
+              rel="noopener noreferrer" [innerHTML]="traductorService.getTexto('buttonRedes1')">
+            </a>
+            <br><br>
           </div>
         </div>
       </div>
