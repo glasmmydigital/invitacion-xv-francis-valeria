@@ -43,10 +43,12 @@ export const TEXT_EN: { [key: string]: string } = {
   dia6: 's',
   //GUARDAR LA FECHA
   guardaFecha: 'Save the date',
+  fecha: 'Date and Time',
+  tfecha: '<b>Tuesday, June 16, 2026<br> 7:00 PM</b>',
   // CEREMONIA Y RECEPCIÓN
-  tituloCeremonia: 'Ceremony',
+  tituloCeremonia: 'Thanksgiving Mass',
   direccionCeremonia: '<b>Mission San Fernando Rey de España</b><br>15151 San Fernando Mission Blvd, Mission Hills, CA 91345, United States',
-  horaCeremonia: 'Time: 7:00 P.M.',
+  horaCeremonia: 'Time: 6:30 P.M.',
   ubicacion: 'SEE LOCATION',
   tituloRecepcion: 'Celebration',
   textoInv: 'Valet Parking complementary',
@@ -79,7 +81,7 @@ export const TEXT_EN: { [key: string]: string } = {
   buttonRedes2: 'Makeup Contact',
   tituloVuelos: 'Accommodations',
   estilista: 'Stylist',
-  maquillista: 'Makeup Artist',
+  maquillista: 'Stylist',
   telefonoLabel: 'Phone',
   aviancaTexto1: 'We are sharing the contact link of our makeup artist and hairstylist. You can contact her directly.',
   aviancaTexto2: 'We suggest these nearby hotels for your convenience!',

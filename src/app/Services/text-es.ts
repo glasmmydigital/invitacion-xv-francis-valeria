@@ -47,12 +47,14 @@ export const TEXT_ES: { [key: string]: string } = {
   dia6: 's',
   // CAROUSEL
   verHotel: 'UBICACIÓN',
+  fecha: 'fecha y hora',
+  tfecha: '<b>Martes 16 de Junio de 2026<br> 7:00 P.M.</b>',
   // GUARDAR LA FECHA
   guardaFecha: 'Guarda la fecha',
   // CEREMONIA Y RECEPCIÓN
-  tituloCeremonia: 'Ceremonia',
+  tituloCeremonia: 'Misa de acción de gracias',
   direccionCeremonia: '<b>Mission San Fernando Rey de España</b><br>15151 San Fernando Mission Blvd, Mission Hills, CA 91345, Estados Unidos',
-  horaCeremonia: 'Hora: 7:00 P.M.',
+  horaCeremonia: 'Hora: 6:30 P.M.',
   ubicacion: 'VER UBICACIÓN',
   tituloRecepcion: 'Celebración',
   textoInv: 'Valet Parking de cortesía',
@@ -89,7 +91,7 @@ export const TEXT_ES: { [key: string]: string } = {
   aviancaTexto2: '¡Te sugerimos estos hoteles cercanos para tu conveniencia!',
   aviancaTexto3: 'Maquillaje y Peinado',
   estilista: 'Estilista',
-  maquillista: 'Maquillista',
+  maquillista: 'Estilista',
   boaTexto1: 'BoA es una aerolínea boliviana que también sale desde Miami. Es un vuelo nocturno, pero también puedes elegir vuelos durante el día.',
   boaTexto2: 'Son económicos y la escala es más tarde, en Santa Cruz, Bolivia. Puedes volar sin interrupciones durante 6 horas y luego tomar un vuelo de una hora a La Paz.',
   boaTexto3: '¡Esta también es una de las formas más fáciles y baratas de llegar a Bolivia!',

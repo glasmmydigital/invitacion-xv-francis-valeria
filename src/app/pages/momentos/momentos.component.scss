@@ -18,11 +18,12 @@
   color: #bda672;
   margin-bottom: 0 !important;
   padding-left: 5%;
+  line-height: 1;
   padding-right: 5%;
 }
 
 .textosec {
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
   text-decoration: none;
   color: #000;
   font-size: 20px;
@@ -203,4 +204,12 @@
 .grid-item--height3 {
   grid-row: span 2;
   /* Ocupa 2 filas */
+}
+.cerm-recep-button {
+  background-color: rgba(255, 223, 228, 0.5215686275);
+  color: #d86c7d;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
 }

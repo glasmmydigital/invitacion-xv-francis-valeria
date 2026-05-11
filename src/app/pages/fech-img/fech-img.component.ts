@@ -1,6 +1,16 @@
-import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID
+} from '@angular/core';
+
+import {
+  isPlatformBrowser
+} from '@angular/common';
+
 import { TraductorServicio } from '../../Services/traductor.service';
-import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-fech-img',
@@ -9,41 +19,59 @@ import { isPlatformBrowser } from '@angular/common';
   templateUrl: './fech-img.component.html',
   styleUrl: './fech-img.component.scss'
 })
-export class FechImgComponent implements AfterViewInit {
+export class FechImgComponent implements OnInit, OnDestroy {
 
-  slideIndex: number = 0;  // Define el índice del slide
+  currentIndex = 0;
+
+  transitionEnabled = true;
+
+  totalImages = 8;
+
+  intervalId: any;
 
   constructor(
     public traductorService: TraductorServicio,
     @Inject(PLATFORM_ID) private platformId: Object
   ) { }
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
+
     if (isPlatformBrowser(this.platformId)) {
-      // Llamar a la función para iniciar el carrusel después de que la vista se haya inicializado
-      this.showSlides();
-      setInterval(() => {
-        this.moveSlide(1);  // Mueve el carrusel cada 3 segundos
-      }, 3000);  // Intervalo de 3 segundos
+
+      this.intervalId = setInterval(() => {
+
+        this.currentIndex++;
+
+        if (this.currentIndex === this.totalImages) {
+
+          setTimeout(() => {
+
+            this.transitionEnabled = false;
+
+            this.currentIndex = 0;
+
+            setTimeout(() => {
+
+              this.transitionEnabled = true;
+
+            }, 50);
+
+          }, 800);
+
+        }
+
+      }, 3000);
+
     }
+
   }
 
-  showSlides(): void {
-    const slides = document.querySelectorAll('.carousel img') as NodeListOf<HTMLImageElement>;
-    if (this.slideIndex >= slides.length) {
-      this.slideIndex = 0;
-    }
-    if (this.slideIndex < 0) {
-      this.slideIndex = slides.length - 1;
+  ngOnDestroy(): void {
+
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
     }
 
-    // Mueve el carrusel a la posición correcta
-    const carousel = document.querySelector('.carousel') as HTMLElement;
-    carousel.style.transform = `translateX(-${this.slideIndex * 100}%)`;
   }
 
-  moveSlide(step: number): void {
-    this.slideIndex += step;
-    this.showSlides();
-  }
 }

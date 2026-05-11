@@ -171,7 +171,7 @@
   .text {
     text-align: center;
     color: #fff;
-    font-family: "Cormorant", serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 20px;
     font-weight: 300;
   }
@@ -182,7 +182,7 @@
 
   .label-text {
     color: #fff;
-    font-family: "Cormorant", serif;
+    font-family: "Quicksand", sans-serif;
     font-size: 20px;
   }
 
@@ -274,7 +274,7 @@
   border-radius: 30%;
   color: #fff;
   background-color: transparent; /* Fondo transparente */
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 20px;
   font-weight: 300;
 }
@@ -297,7 +297,7 @@
 
 input::placeholder {/* Cambia color el texto de ejemplo dentro del input*/
   color: white;
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .container-mas-menos{
@@ -379,7 +379,7 @@ input::placeholder {/* Cambia color el texto de ejemplo dentro del input*/
 }
 
 .error-alert-text {
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 15px;
   margin-top: 10px;
   text-align: center;
@@ -403,7 +403,7 @@ input::placeholder {/* Cambia color el texto de ejemplo dentro del input*/
   background-color: #779960;
 }
 .btn-submit {
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -511,7 +511,7 @@ input::placeholder {/* Cambia color el texto de ejemplo dentro del input*/
   position: relative;
   overflow: hidden;
   outline: 2px solid #fff;
-  font-family: "Cormorant", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .button-confirm:hover {
